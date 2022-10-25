@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import commons.Entry;
-import source.HashTableMap;
+import net.datastructures.HashTableMap;
 import tad_fila_prioridade_heap.HeapPriorityQueue;
 
 class HashTableMapTest {

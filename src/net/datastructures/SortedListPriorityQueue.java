@@ -1,4 +1,4 @@
-package source;
+package net.datastructures;
 
 import java.util.Comparator;
 import exceptions.EmptyPriorityQueueException;
@@ -7,7 +7,7 @@ import position.Position;
 import tad_lista_de_nodos.NodePositionList;
 import tad_lista_de_nodos.PositionList;
 
-public class SortedListPriorityQueue<K, V> implements PriorityQueue<K, V> {
+public class SortedListPriorityQueue<K, V> implements PriorityQueue2<K, V> {
 	protected PositionList<Entry<K, V>> entries;
 	protected Comparator<K> compa;
 	protected Position<Entry<K, V>> actionPos; // variable used by subclasses

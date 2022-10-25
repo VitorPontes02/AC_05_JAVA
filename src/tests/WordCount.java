@@ -3,7 +3,7 @@ package tests;
 import java.io.IOException;
 import java.util.Scanner;
 import commons.Entry;
-import source.HashTableMap;
+import net.datastructures.HashTableMap;
 
 public class WordCount {
 	public static void main(String[] args) throws IOException {

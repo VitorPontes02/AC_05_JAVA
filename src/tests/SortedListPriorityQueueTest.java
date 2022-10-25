@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.Comparator;
 import org.junit.jupiter.api.Test;
 import exceptions.EmptyPriorityQueueException;
+import net.datastructures.Entry;
+import net.datastructures.SortedListPriorityQueue;
 import pessoa.PessoaComparator;
-import source.Entry;
-import source.SortedListPriorityQueue;
 import pessoa.Pessoa;
 
 

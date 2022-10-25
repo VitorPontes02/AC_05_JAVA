@@ -1,4 +1,4 @@
-package source;
+package net.datastructures;
 
 import commons.Entry;
 import exceptions.InvalidKeyException;
