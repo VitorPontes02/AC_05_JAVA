@@ -1,4 +1,4 @@
-package net.datastructures;
+package source;
 
 public interface Entry<K,V> 
 {

@@ -1,4 +1,4 @@
-package net.datastructures;
+package source;
 
 import exceptions.EmptyPriorityQueueException;
 import exceptions.InvalidKeyException;
