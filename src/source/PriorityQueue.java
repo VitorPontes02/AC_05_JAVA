@@ -3,25 +3,24 @@ package source;
 import exceptions.EmptyPriorityQueueException;
 import exceptions.InvalidKeyException;
 
-public interface PriorityQueue 
-{
+public interface PriorityQueue {
 	// Retorna a quantidade de itens na fila de prioridade
 
-		public int size( );
+	public int size();
 
-		// Retorna se a fila de prioridade está vazia
+	// Retorna se a fila de prioridade está vazia
 
-		public boolean isEmpty( );
+	public boolean isEmpty();
 
-		// Retorna mas não remove uma entrada com chave mínima
+	// Retorna mas não remove uma entrada com chave mínima
 
-		public Entry<K,V> min() throws EmptyPriorityQueueException;
+	public Entry<K, V> min() throws EmptyPriorityQueueException;
 
-		// Insere um par chave-valor e retorna a entrada criada
+	// Insere um par chave-valor e retorna a entrada criada
 
-		public Entry<K,V> insert(K key, V value) throws InvalidKeyException;
+	public Entry<K, V> insert(K key, V value) throws InvalidKeyException;
 
-		// Remove e retorna uma entrada com chave mínima
+	// Remove e retorna uma entrada com chave mínima
 
-		public Entry<K,V> removeMin( ) throws EmptyPriorityQueueException;
+	public Entry<K, V> removeMin() throws EmptyPriorityQueueException;
 }

@@ -7,8 +7,7 @@ import position.Position;
 import tad_lista_de_nodos.NodePositionList;
 import tad_lista_de_nodos.PositionList;
 
-public class SortedListPriorityQueue<K, V> implements PriorityQueue<K, V>
-{
+public class SortedListPriorityQueue<K, V> implements PriorityQueue<K, V> {
 	protected PositionList<Entry<K, V>> entries;
 	protected Comparator<K> compa;
 	protected Position<Entry<K, V>> actionPos; // variable used by subclasses
@@ -168,7 +167,7 @@ public class SortedListPriorityQueue<K, V> implements PriorityQueue<K, V>
 
 	// Remove e returna uma entrada com a a menor chave.
 
-	public Entry<K,V> removeMin() throws EmptyPriorityQueueException {
+	public Entry<K, V> removeMin() throws EmptyPriorityQueueException {
 
 		if (entries.isEmpty())
 			throw new EmptyPriorityQueueException("priority queue is empty");
