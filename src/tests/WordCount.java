@@ -1,12 +1,13 @@
 package tests;
 
 import java.io.IOException;
+
 import java.util.Scanner;
-import commons.Entry;
-import net.datastructures.HashTableMap;
+import source.*;
 
 public class WordCount {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException 
+	{
 
 		String texto = "O Brasil, um vasto pais sul-americano, estende-se da Bacia Amazonica, no norte, ate os vinhedos “"
 

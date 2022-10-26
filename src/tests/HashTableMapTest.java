@@ -1,17 +1,25 @@
 package tests;
 
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.jupiter.api.Test;
-import commons.Entry;
-import net.datastructures.HashTableMap;
-import tad_fila_prioridade_heap.HeapPriorityQueue;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+//import static org.junit.jupiterAssert.assertNull;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertFalse;
+//import static org.junit.jupiter.api.Assertions.assertNotNull;
+//import static org.junit.jupiter.api.Assertions.assertTrue;
+//import org.junit.jupiter.api.Test;
+import source.*;
+
 
 class HashTableMapTest {
-	@test
+	@Test
 
 	void test() {
 
@@ -85,9 +93,9 @@ class HashTableMapTest {
 
 		String saida = "{";
 
-		HeapPriorityQueue<String, String> P =
+		SortedListPriorityQueue<String, String> P =
 
-				new HeapPriorityQueue<String, String>();
+				new SortedListPriorityQueue<String, String>();
 
 		for (String ent : values) {
 			P.insert(ent, ent);
@@ -111,7 +119,7 @@ class HashTableMapTest {
 
 		String saida = "{";
 
-		HeapPriorityQueue<Integer, Integer> P = new HeapPriorityQueue<Integer, Integer>();
+		SortedListPriorityQueue<Integer, Integer> P = new SortedListPriorityQueue<Integer, Integer>();
 
 		for (Integer ent : keySet) {
 			P.insert(ent, ent);
@@ -135,7 +143,7 @@ class HashTableMapTest {
 
 		String saida = "{";
 
-		HeapPriorityQueue<Integer, String> P = new HeapPriorityQueue<Integer, String>();
+		SortedListPriorityQueue<Integer, String> P = new SortedListPriorityQueue<Integer, String>();
 
 		for (Entry<Integer, String> ent : iterable) {
 			P.insert(ent.getKey(), ent.getValue());

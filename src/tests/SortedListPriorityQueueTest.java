@@ -1,19 +1,22 @@
 package tests;
 
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
+
 import java.util.Comparator;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+
 import exceptions.EmptyPriorityQueueException;
-import net.datastructures.Entry;
-import net.datastructures.SortedListPriorityQueue;
-import pessoa.PessoaComparator;
-import pessoa.Pessoa;
+import source.Entry;
+import source.Pessoa;
+import source.Pessoacomparator;
+import source.SortedListPriorityQueue;
 
 
 class SortedListPriorityQueueTest {
-	@teste
+	@Test
 	void teste_basico() {
 
 		SortedListPriorityQueue<Integer, String> P = new SortedListPriorityQueue<Integer, String>();
@@ -136,7 +139,7 @@ class SortedListPriorityQueueTest {
 		// No lugar de valor usamos null, pois o objeto Pessoa contém todos os atributos
 		// necessários.
 
-		Comparator<Pessoa> compa = new PessoaComparator();
+		Comparator<Pessoa> compa = new Pessoacomparator();
 
 		SortedListPriorityQueue<Pessoa, Pessoa> P = new SortedListPriorityQueue<Pessoa, Pessoa>(compa);
 
